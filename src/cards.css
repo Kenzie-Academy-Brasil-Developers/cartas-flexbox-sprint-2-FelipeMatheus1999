@@ -27,7 +27,9 @@ html {
     padding: 15px 0;
 }
 
-.card__descriptionIcon {font-size: 32px; margin-bottom: 10px;}
+.card__descriptionIcon {
+  font-size: 32px; 
+  margin-bottom: 10px;}
 
 .card__descriptionText {
     color: #57727C;
@@ -49,7 +51,9 @@ html {
 .cardGroup {
     /* display */
     display: flex;
+    flex-direction: column;
     width: 320px;
+    height: 380px;
     margin: 0 auto;
     align-items: stretch;
     border: 1px solid #CAD0D2;
@@ -77,5 +81,13 @@ html {
     @media only screen and (min-width:768px){
       .cardGroup {
         width: 710px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: stretch;
+        border: 1px solid #CAD0D2;
+        border-radius: 4px;
+        overflow: hidden;
       }
     }
